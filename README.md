@@ -28,10 +28,10 @@ les restaurants, magasins et supermarchés, et de gérer leurs commandes.
 ## Aperçu
 
 ### Page d'accueil
-![Page d'accueil](<img width="1916" height="867" alt="image" src="https://github.com/user-attachments/assets/28ad58cf-a6b1-467a-b586-e4d3fa18d73c" />)
+![Page d'accueil](Capture d'écran 2026-10-01 214923.png)
 
 ### Restaurants
-![Restaurants](<img width="1917" height="876" alt="image" src="https://github.com/user-attachments/assets/34abc348-df11-432c-a693-8d2780a69825" />)
+![Restaurants])
 
 ### planB
 ![Commandes](<img width="1900" height="865" alt="image" src="https://github.com/user-attachments/assets/a2a04a43-1db9-4c32-b17f-d9c1fda56aab" />)
