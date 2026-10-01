@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Desktop</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      height:100vh;
+      background:linear-gradient(120deg,#ffdf50,#ffdf50);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    /* DESKTOP CARD */
+    .container{
+      width:900px;
+      height:520px;
+      background:#fff;
+      border-radius:18px;
+      display:flex;
+      overflow:hidden;
+      box-shadow:0 25px 60px rgba(0,0,0,.3);
+    }
+
+    /* LEFT SIDE */
+    .left{
+      width:45%;
+      background:linear-gradient(180deg,#f7c948,#ffdf50);
+      color:#fff;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:50px;
+    }
+
+    .left h1{
+      font-size:32px;
+      margin-bottom:10px;
+    }
+
+    .left p{
+      font-size:15px;
+      line-height:1.6;
+      opacity:.9;
+    }
+
+    /* RIGHT SIDE */
+    .right{
+      width:55%;
+      padding:60px;
+    }
+
+    .right h2{
+      font-size:26px;
+      margin-bottom:10px;
+    }
+
+    .right span{
+      font-size:14px;
+      color:#777;
+    }
+
+    .field{
+      margin-top:20px;
+    }
+
+    .field input{
+      width:100%;
+      padding:14px 16px;
+      border-radius:10px;
+      border:1px solid #ddd;
+      font-size:14px;
+    }
+
+    .btn{
+      width:100%;
+      margin-top:30px;
+      padding:14px;
+      background:#ffdf50;
+      border:none;
+      border-radius:30px;
+      font-size:16px;
+      font-weight:600;
+      cursor:pointer;
+    }
+
+    .or{
+      text-align:center;
+      margin:20px 0;
+      color:#888;
+    }
+
+    .google{
+      border:1px solid #ddd;
+      border-radius:30px;
+      padding:12px;
+      text-align:center;
+      cursor:pointer;
+      font-weight:500;
+    }
+
+    .footer{
+      text-align:center;
+      margin-top:20px;
+      font-size:14px;
+    }
+
+    .footer a{
+      text-decoration:none;
+      font-weight:600;
+      color:#ffdf50;
+    }
+
+    .error{
+      color:#ff2e2e;
+      font-size:13px;
+      margin-top:10px;
+      display:none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="left">
+      <h1>Welcome</h1>
+      <p>
+        Create your account and start your journey with us.
+        Fast, secure and easy to use.
+      </p>
+    </div>
+
+    <div class="right">
+      <h2>Create Account</h2>
+      <span>Fill in your information</span>
+
+      <form id="form">
+        <div class="field">
+          <input type="text" placeholder="Username">
+        </div>
+
+        <div class="field">
+          <input type="email" placeholder="Email">
+        </div>
+
+        <div class="field">
+          <input type="password" id="password" placeholder="Password">
+        </div>
+
+        <div class="field">
+          <input type="password" id="confirm" placeholder="Confirm Password">
+        </div>
+
+        <a href="home.html" style="text-decoration:none;">
+           <button class="btn" type="button">Sign Up</button>
+        </a>
+        <p class="error" id="error">Passwords do not match</p>
+      </form>
+
+      <div class="or">OR</div>
+
+      <div class="google">Sign in with Google</div>
+
+      <div class="footer">
+        Already have an account ? <a href="#">Login</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

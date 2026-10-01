@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>TikTak - Desktop Fullscreen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#ffdf50;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+/* MAIN CARD FULLSCREEN */
+.app{
+  width:90vw;           /* 90% de la largeur de l'écran */
+  height:90vh;          /* 90% de la hauteur de l'écran */
+  max-width:1200px;     /* largeur max */
+  max-height:800px;     /* hauteur max */
+  background:linear-gradient(180deg,#ffdf50);
+  border-radius:25px;
+  padding:30px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.5);
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:#1b1b1b;
+}
+
+.logo{
+  font-size:3vw;        /* taille relative à l'écran */
+  font-weight:600;
+}
+
+.logo span{
+  color:#2f9e44;
+}
+
+.search{
+  width:40%;
+  background:#fff;
+  border-radius:30px;
+  padding:12px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:1vw;
+}
+
+/* CATEGORIES */
+.categories{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2%;
+  margin-top:5%;
+  width:60%;
+}
+.cat{
+  background:#fff;
+  border-radius:100%;
+  width:12vw;
+  height:12vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-weight:600;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+  font-size:1.5vw;
+
+  text-decoration: none;   /* 🔴 enlève la ligne */
+  color: inherit;          /* 🔴 garde la couleur */
+  transition: transform 0.3s ease; /* 🔴 animation fluide */
+}
+.cat:hover{
+  transform: scale(1.05);
+}
+
+.emoji{
+  font-size:3.5vw;   /* taille de l'emoji, grande */
+  display:block;
+  margin-bottom:10px;
+}
+.label{
+  font-size:1.2vw; /* taille du texte sous l'emoji */
+  text-align:center;
+}
+
+
+.cat img{
+  width:40%;            /* taille de l'image relative au cercle */
+  margin-bottom:5%;
+}
+
+/* DELIVERY IMAGE */
+.delivery{
+  position:absolute;
+  right:5%;             /* position relative à l'écran */
+  top:20%;               /* position plus haut */
+}
+
+.delivery img{
+  width:25vw;            /* image responsive */
+  height:auto;
+}
+
+/* BOTTOM TEXT */
+.footer{
+  position:absolute;
+  left:5%;
+  bottom:3%;
+}
+
+.footer h2{
+  font-size:1.8vw;
+}
+
+.footer p{
+  font-size:1.2vw;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="header">
+    <div class="logo"><span><STRong>Tik</STRong></span><STRONG>Tak ⏰</STRONG></div>
+    <div class="search">
+      <span>Hinted search text</span>
+      🔍
+    </div>
+  </div>
+
+  <div class="categories">
+  <a href="Supermarches.html" class="cat">
+  <span class="emoji">🛒</span>
+  <span class="label">Courses</span>
+</a>
+  <a href="sushi.html" class="cat">
+      <span class="emoji">🍣</span>
+      <span class="label">Sushi</span>
+  </a>
+
+  <a href="planB.html" class="cat">
+      <span class="emoji">🍔</span>
+      <span class="label">Plan B</span>
+ </a>
+  <a href="magasins.html" class="cat">
+       <span class="emoji">🛍️</span>
+       <span class="label">Boutiques</span>
+  </a>
+  <a href="Resturant.html" class="cat">
+       <span class="emoji">🍽️</span>
+       <span class="label">Restaurant</span>
+  </a>
+
+  <div class="cat">
+    <span class="emoji">🛵</span>
+    <span class="label">Livraison</span>
+  </div>
+</div>
+
+  <div class="delivery">
+    <img src="images/xx.png" alt="Delivery">
+  </div>
+
+  <div class="footer">
+    <h2>Livraison gratuite dans TOUT l'appli</h2>
+    <p>Sans achat minimum<br>Conditions d'utilisation</p>
+  </div>
+
+</div>
+
+</body>
+</html>

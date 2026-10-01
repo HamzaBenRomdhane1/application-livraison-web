@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compte</title>
+
+  <link rel="stylesheet" href="profilstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- 🔥 AJOUT POUR SUPPRIMER LA LIGNE VIOLETTE -->
+  <style>
+    .bottom-nav{
+      position:fixed;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:#fff;
+      display:flex;
+      justify-content:space-around;
+      padding:12px 0;
+      box-shadow:0 -2px 10px rgba(0,0,0,0.1);
+    }
+
+    .bottom-nav a{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-decoration:none; /* enlève le trait */
+      color:black;          /* enlève le violet */
+      font-size:22px;
+    }
+
+    .bottom-nav a:visited{
+      color:rgb(0, 0, 0);
+    }
+
+    .bottom-nav a:hover{
+      color:#44ca0f;
+    }
+
+    .bottom-nav span{
+      font-size:12px;
+      margin-top:4px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="account-header">
+  <div class="profile">
+    <div class="avatar">A</div>
+    <div class="user-info">
+      <h3>Aymen</h3>
+      <p>Connectez-vous à vos avis</p>
+    </div>
+    <span class="badge">NOUVEAU</span>
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="card">
+    <h4>Compte</h4>
+
+    <ul class="menu">
+      <li>📦 Commandes</li>
+      <li>👤 Compte</li>
+      <li>🎟️ Codes promo</li>
+      <li>🌐 Langue</li>
+      <li>❓ FAQ</li>
+      <li>🔔 Notifications</li>
+      <li class="danger">🗑️ Supprimer mon compte et mes données</li>
+      <li class="danger">🚪 Confirmer la déconnexion</li>
+    </ul>
+  </div>
+</main>
+
+<!-- BOTTOM NAVIGATION -->
+<div class="bottom-nav">
+  <a href="home.html">
+    🏠
+    <span>Home</span>
+  </a>
+  <a href="commande.html">
+    🛒
+    <span>Panier</span>
+  </a>
+  <a href="profil.html">
+    👤
+    <span>Profil</span>
+  </a>
+</div>
+
+</body>
+</html>

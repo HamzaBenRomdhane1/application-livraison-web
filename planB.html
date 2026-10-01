@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plan B</title>
+
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #f3f4f6;
+      color: #111;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* APP CONTAINER */
+    .app {
+      width: 100%;
+      max-width: 1200px;
+      background: #f3f3f3;
+      padding-bottom: 80px;
+    }
+
+    /* HEADER */
+    .header {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      width: 48px;
+      height: 48px;
+      background: #facc15;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 24px;
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 24px;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+    .desc {
+      color: #555;
+      max-width: 600px;
+      margin: 12px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #facc15;
+      padding: 8px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      margin: 12px 0 24px;
+    }
+
+    /* STATS */
+    .stats {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 32px;
+    }
+
+    .stat {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .stat-icon {
+      width: 52px;
+      height: 52px;
+      background: #fde68a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 6px;
+      font-size: 22px;
+    }
+
+    /* CARDS GRID */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      position: relative;
+      height: 180px;
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    }
+
+    .card-title {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: #facc15;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      z-index: 2;
+    }
+
+    /* BOTTOM NAV (MOBILE ONLY) */
+    .nav {
+      display: none;
+    }
+
+    /* ================= MOBILE ================= */
+    @media (max-width: 768px) {
+      body {
+        background: #fff;
+      }
+
+      .app {
+        max-width: 390px;
+      }
+
+      .header {
+        height: 140px;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .stats {
+        justify-content: space-around;
+        gap: 0;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        height: 100px;
+      }
+
+      .nav {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        max-width: 390px;
+        background: #fff;
+        border-top: 1px solid #e5e7eb;
+        padding: 12px 0;
+      }
+
+      .nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="images/banner.jpg" alt="Plan B">
+      <div class="logo">B</div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="top">
+        <h1>Plan B</h1>
+      </div>
+
+      <p class="desc">
+        Composez vos Sandwich et Pizzas comme vous le voulez !
+      </p>
+
+      <div class="badge">-21% sélection</div>
+
+      <!-- STATS -->
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-icon">👍</div>
+          93%
+        </div>
+        <div class="stat">
+          <div class="stat-icon">⏱</div>
+          20-30'
+        </div>
+        <div class="stat">
+          <div class="stat-icon">🚚</div>
+          2,000 DT
+        </div>
+      </div>
+
+      <!-- CARDS -->
+      <div class="cards">
+        <div class="card">
+          <img src="images/combo.jpg" alt="">
+          <div class="card-title">Combos</div>
+        </div>
+
+        <div class="card">
+          <img src="images/sandwich.jpg" alt="">
+          <div class="card-title">Composez vos sandwich</div>
+        </div>
+
+        <div class="card">
+          <img src="images/burger.jpg" alt="">
+          <div class="card-title">One Food</div>
+          <div class="card-badge">-21%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE NAV -->
+    <div class="nav">
+      <div class="nav-items">
+        🏠 🛒 👤
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
