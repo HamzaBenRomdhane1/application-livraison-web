@@ -28,7 +28,7 @@ les restaurants, magasins et supermarchés, et de gérer leurs commandes.
 ## Aperçu
 
 ### Page d'accueil
-![Page d'accueil](<imgCaphome.png>)
+![Page d'accueil](Caphome.png)
 
 ### Restaurants
 ![Restaurants])
