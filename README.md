@@ -34,7 +34,7 @@ les restaurants, magasins et supermarchés, et de gérer leurs commandes.
 ![Restaurants](Capresto.png)
 
 ### planB
-![Commandes](<img width="1900" height="865" alt="image" src="https://github.com/user-attachments/assets/a2a04a43-1db9-4c32-b17f-d9c1fda56aab" />)
+![planB](CapPLANB.png)
 
 ### Profil
 ![Profil](<img width="1917" height="870" alt="image" src="https://github.com/user-attachments/assets/f9e6b31a-6a9a-4803-81d4-c84d9876af70" />
