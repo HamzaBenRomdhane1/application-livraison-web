@@ -25,3 +25,6 @@ les restaurants, magasins et supermarchés, et de gérer leurs commandes.
 ## Auteur
 
 **Hamza Ben Romdhane**
+## Aperçu
+
+![Aperçu de l'application](screenshot.png)
